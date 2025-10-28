@@ -3,7 +3,7 @@ use HR_Management;
 create table Users(
 UserId int auto_increment primary key,
 username nvarchar(50) not null,
-Password varchar(50) not null,
+password varchar(50) not null,
 role enum('HR', 'Employee') not null
 );
 -- -----------------------
@@ -62,7 +62,6 @@ create index isd_month on PayRoll(month);
 create index isd_employId_leaveRequest on LeaveRequest(EmployId);
 -- status
 create index isd_status on LeaveRequest(status);
-
 
 
 
